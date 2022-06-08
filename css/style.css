@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+
+div.gallery {
+    margin: 10px;
+    border: 2px solid purple;
+    float: left;
+    width: 350px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <h1 style="color: #fff; text-align: center;">MY SIMPLE UNUSUAL PHOTO GALLERY))</h1>
+        <div v-for="(photo, index) in photos" :key="index">
+            <div class="gallery" @mouseover="randomChange(index)">
+                <a href="#">
+                    <img :src="photo.url" :alt="photo.name" style="width: 350px; height: 230px;">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
