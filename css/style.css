@@ -9,6 +9,7 @@ div.gallery {
     width: 350px;
     height: 230px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 div.gallery:hover {
